@@ -11,6 +11,8 @@
       path: glow
     ~/.config/starship:
       path: starship
+    ~/.config/tmux:
+      path: tmux
 
 - shell:
     - git submodule sync --recursive
