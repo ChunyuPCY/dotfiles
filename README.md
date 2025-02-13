@@ -7,4 +7,8 @@
 
 > Personal dotfiles configuration
 
-## Add something more
+## General Personal Setting
+
+- Font: [`FiraCode Nerd Font`](https://www.nerdfonts.com/font-downloads)
+- Shell: [`Zsh`](https://www.zsh.org/)
+- Theme: [`Catppuccin Mocha`](https://catppuccin.com/ports)
