@@ -9,6 +9,7 @@
 
 ## General Personal Setting
 
+- System: `macOS(Apple M2 Max)`
 - Font: [`FiraCode Nerd Font`](https://www.nerdfonts.com/font-downloads)
 - Shell: [`Zsh`](https://www.zsh.org/)
 - Theme: [`Catppuccin Mocha`](https://catppuccin.com/ports)

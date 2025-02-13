@@ -9,6 +9,8 @@
 - link:
     ~/.config/glow:
       path: glow
+    ~/.config/starship:
+      path: starship
 
 - shell:
     - git submodule sync --recursive
