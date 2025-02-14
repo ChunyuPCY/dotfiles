@@ -14,6 +14,10 @@ I try to follow XDG conventions, but this is a mac-centric config.
 ## General Personal Setting
 
 - System: `macOS(Apple M2 Max)`
-- Font: [`FiraCode Nerd Font`](https://www.nerdfonts.com/font-downloads)
+- Multiplexer: [Tmux](https://github.com/tmux/tmux/wiki)
+- Main Terminal: [Wezterm](https://wezfurlong.org/wezterm/index.html)
 - Shell: [`Zsh`](https://www.zsh.org/)
+- Shell Prompt: [Starship](https://starship.rs/)
 - Theme: [`Catppuccin Mocha`](https://catppuccin.com/ports)
+- Font: [`FiraCode Nerd Font`](https://www.nerdfonts.com/font-downloads)
+- File Manager: [Yazi](https://yazi-rs.github.io/)
