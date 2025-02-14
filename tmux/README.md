@@ -1,4 +1,6 @@
-# Tmux Cheatsheet
+> This configuration file is checked from [hendrikmi](https://www.youtube.com/watch?v=adsnH--SAww&list=PLiNR9hlcxJhAq0jzTK7O1Qev7HUCjuqnd)
+
+# Tmux Cheat Sheet
 
 ## Key Commands
 
@@ -87,3 +89,6 @@ if which tmux 2>&1 >/dev/null; then
   fi
 fi
 ```
+
+## Recommendation
+- [Awesome Tmux Repo](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbUtVZmdMc2d0MTQ3N3BVRXBjZktJVGFFTFZtUXxBQ3Jtc0trbnEydHloaGVYdWFUVU1RUGZRbVRabGkwOF93S1ZGUnBHS2Job3BkQ2U5a2R3Z1ZBWElWQW9CSk5ZMVJiOGtJUkpUdXl0bThHWWxfVFhVd1dtV1FRVUU4T2hfQmNHVkZubUdfM3ByeTlDNWt4VlB1TQ&q=https%3A%2F%2Fgithub.com%2Frothgar%2Fawesome-tmux&v=TwxgIPAg7gc)

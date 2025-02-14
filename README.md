@@ -7,6 +7,8 @@
 
 > Personal dotfiles configuration
 
+This repo is designed to be checked out to `XDG_CONFIG_HOME`. See [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html) for more.
+
 ## General Personal Setting
 
 - System: `macOS(Apple M2 Max)`
