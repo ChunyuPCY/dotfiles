@@ -1,0 +1,154 @@
+{
+  // ------------------- Text Editor -------------------
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.experimentalGpuAcceleration": "on",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.lightbulb.enabled": "off",
+  "editor.lineNumbers": "on",
+  "editor.linkedEditing": true,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "comments": { // 修改注释颜色
+      "fontStyle": "bold",
+      "foreground": "#82e0aa"
+    }
+  },
+  "editor.wordWrap": "on",
+  "editor.fontFamily": "'FiraCode Nerd Font Mono', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.fontWeight": "500",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.minimap.enabled": true,
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/node_modules": false,
+    "**/tmp": true
+  },
+  "files.associations": { // Files: Associations
+    "*.js": "javascript",
+    "*.json": "jsonc",
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript"
+  },
+  // ---------------------------------------------------
+  // 
+  // -------------------- Workbench --------------------
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.externalBrowser": "arc",
+  "workbench.sideBar.location": "right",
+  // ---------------------------------------------------
+  // 
+  // --------------------- Features --------------------
+  "explorer.confirmDragAndDrop": false,
+  "debug.console.fontSize": 14,
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', monospace",
+  "terminal.external.osxExec": "WezTerm.app",
+  // ---------------------------------------------------
+  // 
+  // --------------------- Security --------------------
+  "security.workspace.trust.untrustedFiles": "open",
+  // ---------------------------------------------------
+  // 
+  // -------------------- Extensions -------------------
+  "cSpell.userWords": [
+    "cjson",
+    "dont",
+    "esbenp",
+    "Evondev",
+    "radash",
+    "vetur",
+    "vsicons",
+    "vueuse",
+    "wxss"
+  ],
+  // 当按tab键的时候，会自动提示
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.includeLanguages": {
+    // jsx的提示
+    "javascript": "javascriptreact",
+    // "vue-html": "html",
+    // "vue": "html",
+    "wxml": "html"
+  },
+  "errorLens.excludeBySource": [
+    "eslint(prettier/prettier)"
+  ],
+  // eslint配置项，保存时自动修复错误
+  "eslint.enable": true,
+  "eslint.problems.shortenToSingleLine": true,
+  "eslint.useFlatConfig": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.ignoreMissingGitWarning": true,
+  "git.openRepositoryInParentFolders": "never",
+  "javascript.format.semicolons": "remove",
+  "json.schemas": [],
+  "liveServer.settings.donotShowInfoMsg": true,
+  "npm.enableRunFromFolder": true,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.bracketSameLine": true,
+  // 函数前面加个空格
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true, 
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // ---------------------------------------------------
+  // 
+  // ---------------- Custom Formatting ----------------
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // 指定 *.vue 文件的格式化工具为volar
+  "[vue]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  //配置对 .ts 文件的格式化
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // 指定 *.js 文件的格式化工具为vscode自带
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  //配置对 .json 文件的格式化
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[lua]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  // ---------------------------------------------------
+  // 
+  // -------------------- Vim Config -------------------
+  // ---------------------------------------------------
+}
