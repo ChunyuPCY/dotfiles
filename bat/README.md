@@ -2,7 +2,7 @@
 
 In this repo, `Catppuucin Mocha` is the main color theme.
 
-If the `bat` command is used, the result is not as expected, please excute the following command.
+If the `bat` command is used, the result is not as expected, please execute the following command.
 
 ```shell
 # Update the binary cache
