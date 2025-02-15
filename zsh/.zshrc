@@ -57,7 +57,7 @@ bindkey '^n' history-search-forward              # Ctrl + n
 # ----------------------- History Setup -------------------------
 #
 # The file where the history is stored
-HISTFILE=$ZDOTDIR/.zhistory
+HISTFILE=$XDG_CACHE_HOME/.zhistory
 # Number of events stored in the zsh history file
 SAVEHIST=5000
 # Number of events loaded into memory
