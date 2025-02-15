@@ -4,7 +4,11 @@ alias code='open -a "Visual Studio Code"'
 
 alias zshup="source $XDG_CONFIG_HOME/zsh/.zshrc;echo zshrc updated!"
 
-# ---- Eza (better ls) -----
+alias c="clear"
+
+# 
+# --------------------- Eza (better ls) ---------------------
+#
 # 默认显示 icons：
 alias ls="eza --icons"
 # 显示文件目录详情
@@ -13,12 +17,6 @@ alias ll="eza --icons --long --header"
 alias la="eza --icons --long --header --all"
 # 显示详情的同时，附带 git 状态信息
 alias lg="eza --icons --long --header --all --git"
-
 # 替换 tree 命令
 alias lt="eza --tree -L 2 --icons"
-
-# ---- Zoxide (better cd) ----
-alias cd="z"
-
-# Clear
-alias c="clear"
+# -----------------------------------------------------------

@@ -20,6 +20,7 @@
       path: starship
     ~/.config/tmux:
       path: tmux
+    ~/.config/eza/theme.yml: ./eza/catppuccin.yml
 
     # VS Code Linux
     ~/.config/Code/User:

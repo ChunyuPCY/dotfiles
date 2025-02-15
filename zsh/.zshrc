@@ -104,6 +104,10 @@ starship config palette $STARSHIP_THEME
 # Zoxide (smart cd command)
 export _ZO_DATA_DIR="$XDG_CACHE_HOME/zoxide"
 export _ZO_ECHO=1
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+
+# Eza
+export EZA_CONFIG_DIR=$XDG_CONFIG_HOME/eza
+
 # ---------------------------------------------------------------
 
