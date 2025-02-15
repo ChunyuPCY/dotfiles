@@ -16,6 +16,9 @@
 
     ~/.config/glow:
       path: glow
+    ~/.config/bat:
+      path: bat
+      force: true
     ~/.config/starship:
       path: starship
     ~/.config/tmux:
