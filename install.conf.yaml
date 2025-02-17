@@ -14,6 +14,10 @@
       path: zsh
       force: true
 
+    ~/.config/fastfetch:
+      path: fastfetch
+      force: true
+
     ~/.config/glow:
       path: glow
     ~/.config/bat:
