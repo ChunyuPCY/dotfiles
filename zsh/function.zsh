@@ -24,9 +24,11 @@ alias lg="eza --icons --long --header --all --git"
 alias lt="eza --tree -L 2 --icons"
 # -----------------------------------------------------------
 
-#
-# 
-#
-# alias gcb="git branch | fzf --preview 'git show --color=always {-1}' \
-#                 --bind 'enter:become(git checkout {-1})' \
-#                 --height 40% --layout reverse"
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}

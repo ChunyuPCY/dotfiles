@@ -24,14 +24,21 @@
 
     ~/.config/glow:
       path: glow
+
     ~/.config/bat:
       path: bat
       force: true
+
     ~/.config/starship:
       path: starship
+
     ~/.config/tmux:
       path: tmux
     ~/.config/eza/theme.yml: ./eza/catppuccin.yml
+
+    ~/.config/yazi:
+      path: yazi
+      force: true
 
     # VS Code Linux
     ~/.config/Code/User:
