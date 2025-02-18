@@ -33,9 +33,10 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+zinit load wfxr/forgit
 
 # Add in snippets
-zinit snippet OMZP::git
+# zinit snippet OMZP::git
 zinit snippet OMZP::command-not-found
 
 # Load completions
@@ -87,9 +88,10 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 source $ZDOTDIR/lang.zsh
 
 # Initialize aliases
-for file in $ZDOTDIR/aliases/*.zsh; do
-  source "$file"
-done
+source $ZDOTDIR/function.zsh
+# for file in $ZDOTDIR/aliases/*.zsh; do
+#   source "$file"
+# done
 
 # 
 # ---------------------- Shell integrations ---------------------

@@ -5,6 +5,9 @@ alias code='open -a "Visual Studio Code"'
 alias zshup="source $XDG_CONFIG_HOME/zsh/.zshrc;echo zshrc updated!"
 
 alias c="clear"
+alias e="exit"
+
+alias cat="bat"
 
 # 
 # --------------------- Eza (better ls) ---------------------
@@ -20,3 +23,10 @@ alias lg="eza --icons --long --header --all --git"
 # 替换 tree 命令
 alias lt="eza --tree -L 2 --icons"
 # -----------------------------------------------------------
+
+#
+# 
+#
+# alias gcb="git branch | fzf --preview 'git show --color=always {-1}' \
+#                 --bind 'enter:become(git checkout {-1})' \
+#                 --height 40% --layout reverse"
