@@ -179,30 +179,11 @@
       ]
     }
   ],
-  "vim.normalModeKeyBindings": [
-    {
-      "before": [
-        "H"
-      ],
-      "after": [
-        "^"
-      ]
-    },
-    {
-      "before": [
-        "L"
-      ],
-      "after": [
-        "g",
-        "_"
-      ]
-    }
-  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     // Switch between buffers using Tab
     {
       "before": [
-        "<Tab>"
+        "<S-l>"
       ],
       "commands": [
         ":bnext"
@@ -210,7 +191,7 @@
     },
     {
       "before": [
-        "<S-Tab>"
+        "<S-h>"
       ],
       "commands": [
         ":bprev"
@@ -220,7 +201,7 @@
     {
       "before": [
         "leader",
-        "\\"
+        "|"
       ],
       "commands": [
         ":vsplit"
@@ -250,7 +231,7 @@
       ],
       "commands": [
         "workbench.action.navigateDown"
-      ]
+      ],
     },
     {
       "before": [
@@ -455,25 +436,6 @@
         "workbench.action.decreaseViewSize"
       ]
     }
-  ],
-  "vim.visualModeKeyBindings": [
-    {
-      "before": [
-        "H"
-      ],
-      "after": [
-        "^"
-      ]
-    },
-    {
-      "before": [
-        "L"
-      ],
-      "after": [
-        "g",
-        "_"
-      ]
-    },
   ],
   // To improve performance
   "extensions.experimental.affinity": {
