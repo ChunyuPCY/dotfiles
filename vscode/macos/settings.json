@@ -48,6 +48,9 @@
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.externalBrowser": "arc",
   "workbench.sideBar.location": "right",
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
   // ---------------------------------------------------
   // 
   // --------------------- Features --------------------
@@ -440,6 +443,6 @@
   // To improve performance
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
-  }
+  },
   // ---------------------------------------------------
 }
