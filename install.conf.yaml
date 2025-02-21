@@ -9,25 +9,20 @@
 - link:
     ~/.zshenv:
       path: zsh/.zshenv
-      force: true
     ~/.config/zsh:
       path: zsh
-      force: true
 
     ~/.config/fastfetch:
       path: fastfetch
-      force: true
 
     ~/.config/bottom:
       path: bottom
-      force: true
 
     ~/.config/glow:
       path: glow
 
     ~/.config/bat:
       path: bat
-      force: true
 
     ~/.config/starship:
       path: starship
@@ -38,7 +33,15 @@
 
     ~/.config/yazi:
       path: yazi
-      force: true
+
+    ~/.config/nvim:
+      path: lazyvim
+
+    ~/.config/lazygit:
+      path: lazygit
+      
+    ~/.config/wezterm:
+      path: wezterm
 
     # VS Code Linux
     ~/.config/Code/User:
