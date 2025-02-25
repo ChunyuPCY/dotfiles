@@ -9,16 +9,16 @@
 
 This repo is designed to be checked out to `XDG_CONFIG_HOME`. See [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html) for more.
 
-I try to follow XDG conventions, but this is a mac-centric config.
+I try to follow XDG conventions, but this is a mac-centric configuration.
 
 ## General Personal Setting
 
 - System: `macOS(Apple M2 Max)`
-- Multiplexer: [Tmux](https://github.com/tmux/tmux/wiki) | [使用](./tmux/README.md)
-- Main Terminal: [Wezterm](https://wezfurlong.org/wezterm/index.html) | [使用](./wezterm/README.md)
+- Multiplexer: [Tmux](https://github.com/tmux/tmux/wiki) | [Usage](./tmux/README.md)
+- Main Terminal: [Wezterm](https://wezfurlong.org/wezterm/index.html) | [Usage](./wezterm/README.md)
 - Shell: [`Zsh`](https://www.zsh.org/)
 - Shell Prompt: [Starship](https://starship.rs/)
 - Theme: [`Catppuccin Mocha`](https://catppuccin.com/ports)
 - Font: [`FiraCode Nerd Font`](https://www.nerdfonts.com/font-downloads)
-- File Manager: [Yazi](https://yazi-rs.github.io/) | [使用](./yazi/README.md)
-- Editor: [Neovim](https://neovim.io/) & [LazyVim](https://www.lazyvim.org/) | [使用](./lazyvim/README.md)
+- File Manager: [Yazi](https://yazi-rs.github.io/) | [Usage](./yazi/README.md)
+- Editor: [Neovim](https://neovim.io/) & [LazyVim](https://www.lazyvim.org/) | [Usage](./lazyvim/README.md)
