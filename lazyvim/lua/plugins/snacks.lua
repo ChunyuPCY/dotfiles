@@ -154,6 +154,9 @@ return {
     },
     picker = {
       sources = {
+        buffers = {
+          hidden = true,
+        },
         explorer = {
           layout = {
             layout = {

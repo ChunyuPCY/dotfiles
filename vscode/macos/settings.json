@@ -24,7 +24,7 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.smoothScrolling": true,
   "editor.mouseWheelZoom": true,
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.fontWeight": "500",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,

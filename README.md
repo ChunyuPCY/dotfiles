@@ -21,4 +21,5 @@ I try to follow XDG conventions, but this is a mac-centric configuration.
 - Theme: [`Catppuccin Mocha`](https://catppuccin.com/ports)
 - Font: [`FiraCode Nerd Font`](https://www.nerdfonts.com/font-downloads)
 - File Manager: [Yazi](https://yazi-rs.github.io/) | [Usage](./yazi/README.md)
-- Editor: [Neovim](https://neovim.io/) & [LazyVim](https://www.lazyvim.org/) | [Usage](./lazyvim/README.md)
+- Main Editor: [Neovim](https://neovim.io/) & [LazyVim](https://www.lazyvim.org/) | [Usage](./lazyvim/README.md)
+- Other Editor: [VsCode](https://code.visualstudio.com/) | [Usage (mac)](./vscode/README.md)
