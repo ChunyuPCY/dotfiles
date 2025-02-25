@@ -154,10 +154,8 @@ return {
     },
     picker = {
       sources = {
-        buffers = {
-          hidden = true,
-        },
         explorer = {
+          hidden = true, -- Show hidden files in Explorer
           layout = {
             layout = {
               -- to show the explorer to the right
