@@ -1,4 +1,4 @@
-# ChunyuPCY's dotfiles
+# ChunyuPCY's dotfiles ⏳*in progress*
 
 [![Powered by dotbot][dbshield]][dblink]
 
