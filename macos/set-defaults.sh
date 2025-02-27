@@ -40,5 +40,9 @@ defaults write com.apple.dock autohide -bool true
 echo "  › Save to disk by default, instead of iCloud"
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
+# Show all files and their extensions
+defaults write com.apple.finder AppleShowAllExtensions -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
 # Ensures the script will stop immediately if an error occurs after this command
 set -e

@@ -1,5 +1,3 @@
-local layout = require("snacks.layout")
-local layouts = require("snacks.picker.config.layouts")
 local function header_banner()
   if vim.fn.has("mac") == 1 and vim.g.neovide then
     return [[
@@ -27,6 +25,7 @@ local function header_banner()
     ]]
   end
 end
+
 return {
   "folke/snacks.nvim",
   ---@type snacks.Config
@@ -158,8 +157,7 @@ return {
           hidden = true, -- Show hidden files in Explorer
           layout = {
             layout = {
-              -- to show the explorer to the right
-              position = "right",
+              position = "right", -- Show the explorer to the right
             },
           },
         },
