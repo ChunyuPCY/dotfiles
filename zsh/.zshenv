@@ -28,3 +28,4 @@ ZDOTDIR=$XDG_CONFIG_HOME/zsh
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+. "/Users/pcy/.local/share/cargo/env"
