@@ -11,11 +11,10 @@ source "${LUVER_DIR}/self/luver.plugin.zsh"
 # ---------------------------------------------------------------
 
 #
-# --------------- Volta - Javascript Tool Manager ---------------
+# ---------------- fnm - Javascript Tool Manager ----------------
 #
-export VOLTA_HOME=$XDG_DATA_HOME/volta
-export PATH=$VOLTA_HOME/bin:$PATH;
-export VOLTA_FEATURE_PNPM=1
+eval "$(fnm env --use-on-cd --version-file-strategy=recursive --corepack-enabled --resolve-engines --shell zsh)"
+# ---------------------------------------------------------------
 
 # NPMRC
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npmrc
