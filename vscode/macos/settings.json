@@ -1,9 +1,5 @@
 {
   // ------------------- Text Editor -------------------
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
-    "source.fixAll.eslint": "explicit"
-  },
   "editor.experimentalGpuAcceleration": "on",
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.lightbulb.enabled": "off",
