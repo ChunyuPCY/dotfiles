@@ -149,7 +149,8 @@ return {
       },
     },
     image = {
-      enabled = true,
+      -- TODO: wait for completion
+      enabled = false,
     },
     picker = {
       sources = {

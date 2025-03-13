@@ -5,11 +5,14 @@
 local opt = vim.opt
 opt.wrap = true
 opt.showbreak = "↪ "
+opt.exrc = true
 
 local g = vim.g
 g.ai_cmp = true
 g.lazyvim_picker = "fzf"
 g.lazyvim_cmp = "blink.cmp"
+g.lazyvim_eslint_auto_format = false
+g.lazyvim_prettier_needs_config = true
 
 -- FileTypes
 LazyVim.on_very_lazy(function()
@@ -17,7 +20,7 @@ LazyVim.on_very_lazy(function()
     extension = {
       mdx = "markdown.mdx",
       qmd = "markdown",
-      MD = "markdown",
+      md = "markdown",
       yml = require("utils").yaml_ft,
       yaml = require("utils").yaml_ft,
       json = "jsonc",
