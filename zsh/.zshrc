@@ -94,7 +94,7 @@ source $ZDOTDIR/function.zsh
 # done
 
 # 
-# ---------------------- Shell integrations ---------------------
+# ---------------------- shell integrations ---------------------
 #
 eval "$(fzf --zsh)"
 # Add Catppuccin Mocha theme of fzf
@@ -117,6 +117,11 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Eza
 export EZA_CONFIG_DIR=$XDG_CONFIG_HOME/eza
+# ---------------------------------------------------------------
 
+# 
+# ---- AI: encrypt and decrypt api key using the "age" tool -----
+#
+export DEEPSEEK_API_KEY=$(age -d -i $ZDOTDIR/keys/key.txt $ZDOTDIR/keys/deepseek-key.age)
 # ---------------------------------------------------------------
 
