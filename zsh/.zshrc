@@ -122,6 +122,8 @@ export EZA_CONFIG_DIR=$XDG_CONFIG_HOME/eza
 # 
 # ---- AI: encrypt and decrypt api key using the "age" tool -----
 #
-export DEEPSEEK_API_KEY=$(age -d -i $ZDOTDIR/keys/key.txt $ZDOTDIR/keys/deepseek-key.age)
+export DEEPSEEK_API_KEY=$(age -d -i $ZDOTDIR/keys/deepseek.key $ZDOTDIR/keys/deepseek-key.age)
+export DASHSCOPE_API_KEY=$(age -d -i $ZDOTDIR/keys/qianwen.key $ZDOTDIR/keys/qianwen-key.age)
+
 # ---------------------------------------------------------------
 
