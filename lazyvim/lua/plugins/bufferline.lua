@@ -4,6 +4,7 @@ return {
   opts = {
     options = {
       separator_style = { " ", " " },
+      always_show_bufferline = true,
     },
   },
 }
