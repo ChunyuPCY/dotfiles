@@ -7,6 +7,8 @@ return {
       -- add any opts here
       -- for example
       provider = "qianwen",
+      -- provider = "deepseek",
+      auto_suggestions_provider = "deepseek",
       vendors = {
         deepseek = {
           __inherited_from = "openai",
@@ -21,6 +23,15 @@ return {
           model = "qwen-coder-plus-latest",
         },
       },
+      windows = {
+        position = "left",
+      },
+      file_selector = {
+        --- @alias FileSelectorProvider "native" | "fzf" | "mini.pick" | "snacks" | "telescope" | string | fun(params: avante.file_selector.IParams|nil): nil
+        provider = "fzf",
+        -- Options override for custom providers
+        provider_opts = {},
+      },
     },
     -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
     build = "make",
@@ -33,10 +44,10 @@ return {
       --- The below dependencies are optional,
       "echasnovski/mini.pick", -- for file_selector provider mini.pick
       "nvim-telescope/telescope.nvim", -- for file_selector provider telescope
-      "hrsh7th/nvim-cmp", -- autocompletion for avante commands and mentions
+      "hrsh7th/nvim-cmp", -- autocompletion for avante commands and mentions | saghen/blink.cmp
       "ibhagwan/fzf-lua", -- for file_selector provider fzf
-      "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
-      "zbirenbaum/copilot.lua", -- for providers='copilot'
+      "echasnovski/mini.icons", -- or echasnovski/mini.icons | nvim-tree/nvim-web-devicons
+      -- "zbirenbaum/copilot.lua", -- for providers='copilot'
       {
         -- support for image pasting
         "HakonHarnes/img-clip.nvim",
