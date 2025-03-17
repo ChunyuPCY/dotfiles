@@ -188,11 +188,31 @@
       ]
     }
   ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "g",
+        "_"
+      ]
+    },
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     // Switch between buffers using Tab
     {
       "before": [
-        "<S-l>"
+        "<Tab>",
+        "l"
       ],
       "commands": [
         ":bnext"
@@ -200,10 +220,28 @@
     },
     {
       "before": [
-        "<S-h>"
+        "<Tab>",
+        "h"
       ],
       "commands": [
         ":bprev"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "g",
+        "_"
       ]
     },
     // Create splits
