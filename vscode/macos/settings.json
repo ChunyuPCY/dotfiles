@@ -10,12 +10,12 @@
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
     "comments": { // 修改注释颜色
-      "fontStyle": "bold",
+      "fontStyle": "italic bold",
       "foreground": "#82e0aa"
     }
   },
   "editor.wordWrap": "on",
-  "editor.fontFamily": "'FiraCode Nerd Font Mono', monospace",
+  "editor.fontFamily": "'Maple Mono NF', Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.smoothScrolling": true,
@@ -56,7 +56,7 @@
   // --------------------- Features --------------------
   "explorer.confirmDragAndDrop": false,
   "debug.console.fontSize": 14,
-  "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono', monospace",
+  "terminal.integrated.fontFamily": "'Maple Mono NF', monospace",
   "terminal.external.osxExec": "WezTerm.app",
   "terminal.integrated.fontSize": 14,
   // ---------------------------------------------------
