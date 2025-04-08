@@ -8,7 +8,7 @@ opt.exrc = true
 opt.winborder = "rounded"
 
 local g = vim.g
-g.ai_cmp = true
+g.ai_cmp = false
 
 -- In case you don't want to use `:LazyExtras`,
 -- then you need to set the option below.
@@ -36,4 +36,4 @@ g.lazyvim_rust_diagnostics = "rust-analyzer"
 g.lazyvim_prettier_needs_config = false
 
 -- Set to false to disable auto format
-g.lazyvim_eslint_auto_format = true
+g.lazyvim_eslint_auto_format = false

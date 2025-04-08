@@ -3,6 +3,7 @@ return {
   dependencies = {
     "moyiz/blink-emoji.nvim",
     "MahanRahmati/blink-nerdfont.nvim",
+    "Kaiser-Yang/blink-cmp-avante",
   },
   ---@module 'blink-cmp'
   ---@type blink.cmp.Config
@@ -22,7 +23,7 @@ return {
       },
     },
     sources = {
-      default = { "lsp", "path", "snippets", "buffer", "emoji", "nerdfont" },
+      default = { "lsp", "path", "snippets", "buffer", "emoji", "nerdfont", "avante" },
       providers = {
         emoji = {
           module = "blink-emoji",
@@ -43,6 +44,13 @@ return {
           name = "Nerd Fonts",
           score_offset = 15, -- Tune by preference
           opts = { insert = true }, -- Insert nerdfont icon (default) or complete its name
+        },
+        avante = {
+          module = "blink-cmp-avante",
+          name = "Avante",
+          opts = {
+            -- options for blink-cmp-avante
+          },
         },
       },
     },
