@@ -1,4 +1,5 @@
 alias clash='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890;echo VPN loaded!'
+clash
 
 alias code='open -a "Visual Studio Code"'
 
@@ -32,3 +33,5 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+# alias vi='NVIM_APPNAME="nvim-from-scratch" nvim'

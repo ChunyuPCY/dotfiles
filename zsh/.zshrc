@@ -16,16 +16,9 @@ fi
 # 
 # ---------------- Zinit - zsh plugin management ----------------
 # 
-# Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-
-# Download Zinit, if it's not there yet
-if [ ! -d "$ZINIT_HOME" ]; then
-   mkdir -p "$(dirname $ZINIT_HOME)"
-   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
-fi
-
-# Source/Load zinit
+[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 source "${ZINIT_HOME}/zinit.zsh"
 
 # Add in zsh plugins
@@ -38,6 +31,11 @@ zinit load wfxr/forgit
 # Add in snippets
 # zinit snippet OMZP::git
 zinit snippet OMZP::command-not-found
+
+# zsh-syntax-highlighting catppuccin mocha theme
+zinit snippet "https://github.com/catppuccin/zsh-syntax-highlighting/blob/main/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh"
+# if dracula is your favor theme
+# zinit snippet "https://github.com/dracula/zsh-syntax-highlighting/blob/master/zsh-syntax-highlighting.sh"
 
 # Load completions
 autoload -U compinit && compinit
@@ -105,7 +103,7 @@ export FZF_DEFAULT_OPTS=" \
 --color=selected-bg:#45475a \
 --multi"
 
-# starship: 
+# Starship: 
 export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/config.toml
 eval "$(starship init zsh)"
 starship config palette $STARSHIP_THEME
@@ -124,6 +122,5 @@ export EZA_CONFIG_DIR=$XDG_CONFIG_HOME/eza
 #
 export DEEPSEEK_API_KEY=$(age -d -i $ZDOTDIR/keys/deepseek.key $ZDOTDIR/keys/deepseek-key.age)
 export DASHSCOPE_API_KEY=$(age -d -i $ZDOTDIR/keys/qianwen.key $ZDOTDIR/keys/qianwen-key.age)
-
 # ---------------------------------------------------------------
 

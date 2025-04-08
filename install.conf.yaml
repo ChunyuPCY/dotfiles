@@ -39,9 +39,12 @@
 
     ~/.config/lazygit:
       path: lazygit
-      
+
     ~/.config/wezterm:
       path: wezterm
+
+    ~/.config/ghostty:
+      path: ghostty
 
     # VS Code Linux
     ~/.config/Code/User:
