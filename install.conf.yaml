@@ -46,6 +46,9 @@
     ~/.config/ghostty:
       path: ghostty
 
+    ~/.config/presenterm:
+      path: presenterm
+
     # VS Code Linux
     ~/.config/Code/User:
       if: "[[ `uname` = Linux ]]"
