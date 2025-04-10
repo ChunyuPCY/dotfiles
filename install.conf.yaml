@@ -12,6 +12,9 @@
     ~/.config/zsh:
       path: zsh
 
+    ~/.gitconfig:
+    ~/.gitignore_global:
+
     ~/.config/fastfetch:
       path: fastfetch
 
@@ -69,4 +72,5 @@
 
 - shell:
     - git submodule sync --recursive
-    - git submodule update --init --recursive --remote
+    # the following have to run after linking ~/.gitconfig
+    - git update-submodules

@@ -1,5 +1,9 @@
-alias clash='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890;echo VPN loaded!'
+function clash() {
+  export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890;
+}
 clash
+
+alias vpn="$(clash);echo 'VPN loaded!';"
 
 alias code='open -a "Visual Studio Code"'
 
