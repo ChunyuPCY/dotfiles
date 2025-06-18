@@ -77,21 +77,6 @@
   "terminal.integrated.fontFamily": "'Maple Mono NF', monospace",
   "terminal.external.osxExec": "WezTerm.app",
   "terminal.integrated.fontSize": 14,
-  "window.customTitleBarVisibility": "never",
-  "window.titleBarStyle": "native",
-  "custom-ui-style.electron": {
-    "titleBarStyle": "hiddenInset",
-    "trafficLightPosition": {
-      "x": 12,
-      "y": 10
-    }
-  },
-  "custom-ui-style.stylesheet": {
-    ".notification-toast": "box-shadow: none !important",
-    ".quick-input-widget": "top: 25vh !important",
-    ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container": "padding-left: 72px",
-  },
-  "custom-ui-style.font.sansSerif": "Maple Mono",
   // ---------------------------------------------------
   //
   // --------------------- Security --------------------
@@ -285,6 +270,16 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "l",
+        "e"
+      ],
+      "commands": [
+        "workbench.files.action.focusFilesExplorer"
+      ]
+    },
     {
       "before": [
         "<leader>",

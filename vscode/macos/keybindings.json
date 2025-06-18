@@ -90,6 +90,11 @@
     "command": "list.select",
     "when": "!inputFocus"
   },
+  {
+    "key": "ctrl+l",
+    "command": "explorer.openToSide",
+    "when": "!inputFocus"
+  },
   //
   // === Submenu navigation ===
   //
