@@ -4,28 +4,34 @@
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.lightbulb.enabled": "off",
   "editor.cursorBlinking": "expand",
-  "editor.lineNumbers": "on",
+  "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
-    "comments": { // 修改注释颜色
-      "fontStyle": "italic bold",
-      "foreground": "#82e0aa"
-    }
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "foreground": "#45b787",
+          "fontStyle": "italic bold"
+        }
+      }
+    ]
   },
   "editor.wordWrap": "on",
-  "editor.fontFamily": "'Maple Mono NF', Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "Maple Mono NF",
   "editor.fontLigatures": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.smoothScrolling": true,
   "editor.mouseWheelZoom": true,
   "editor.fontSize": 14,
+  "editor.lineHeight": 2,
   "editor.fontWeight": "500",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "files.exclude": {
     "**/.DS_Store": true,
     "**/.git": true,
@@ -35,36 +41,63 @@
     "**/node_modules": false,
     "**/tmp": true
   },
-  "files.associations": { // Files: Associations
+  "files.associations": {
+    // Files: Associations
     "*.js": "javascript",
     "*.json": "jsonc",
     "*.cjson": "jsonc",
     "*.wxss": "css",
     "*.wxs": "javascript"
   },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
   // ---------------------------------------------------
-  // 
+  //
   // -------------------- Workbench --------------------
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.externalBrowser": "arc",
   "workbench.sideBar.location": "right",
+  // "workbench.editor.showTabs": "single",
+  "workbench.startupEditor": "none",
+  // "workbench.statusBar.visible": false,
+  "workbench.tips.enabled": false,
   "workbench.editorAssociations": {
     "*.svg": "default"
   },
+  "catppuccin-icons.hidesExplorerArrows": true,
   // ---------------------------------------------------
-  // 
+  //
   // --------------------- Features --------------------
+  "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "breadcrumbs.enabled": false,
+  "scm.diffDecorations": "none",
   "debug.console.fontSize": 14,
   "terminal.integrated.fontFamily": "'Maple Mono NF', monospace",
   "terminal.external.osxExec": "WezTerm.app",
   "terminal.integrated.fontSize": 14,
+  "window.customTitleBarVisibility": "never",
+  "window.titleBarStyle": "native",
+  "custom-ui-style.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 12,
+      "y": 10
+    }
+  },
+  "custom-ui-style.stylesheet": {
+    ".notification-toast": "box-shadow: none !important",
+    ".quick-input-widget": "top: 25vh !important",
+    ".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container": "padding-left: 72px",
+  },
+  "custom-ui-style.font.sansSerif": "Maple Mono",
   // ---------------------------------------------------
-  // 
+  //
   // --------------------- Security --------------------
   "security.workspace.trust.untrustedFiles": "open",
   // ---------------------------------------------------
-  // 
+  //
   // -------------------- Extensions -------------------
   "cSpell.userWords": [
     "cjson",
@@ -121,7 +154,7 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   // ---------------------------------------------------
-  // 
+  //
   // ---------------- Custom Formatting ----------------
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
@@ -167,327 +200,6 @@
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   // ---------------------------------------------------
-  // 
-  // -------------------- Vim Config -------------------
-  "vim.leader": "<Space>",
-  "vim.hlsearch": true,
-  "vim.easymotion": true,
-  "vim.sneak": true,
-  "vim.incsearch": true,
-  "vim.useCtrlKeys": true,
-  "vim.useSystemClipboard": true,
-  "vim.highlightedyank.enable": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "k"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "H"
-      ],
-      "after": [
-        "^"
-      ]
-    },
-    {
-      "before": [
-        "L"
-      ],
-      "after": [
-        "g",
-        "_"
-      ]
-    },
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    // Switch between buffers using Tab
-    {
-      "before": [
-        "<Tab>",
-        "l"
-      ],
-      "commands": [
-        ":bnext"
-      ]
-    },
-    {
-      "before": [
-        "<Tab>",
-        "h"
-      ],
-      "commands": [
-        ":bprev"
-      ]
-    },
-    {
-      "before": [
-        "H"
-      ],
-      "after": [
-        "^"
-      ]
-    },
-    {
-      "before": [
-        "L"
-      ],
-      "after": [
-        "g",
-        "_"
-      ]
-    },
-    // Create splits
-    {
-      "before": [
-        "leader",
-        "|"
-      ],
-      "commands": [
-        ":vsplit"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "-"
-      ],
-      "commands": [
-        ":split"
-      ]
-    },
-    // Navigate panes using CTRL+hjkl
-    {
-      "before": [
-        "<C-h>"
-      ],
-      "commands": [
-        "workbench.action.navigateLeft"
-      ]
-    },
-    {
-      "before": [
-        "<C-j>"
-      ],
-      "commands": [
-        "workbench.action.navigateDown"
-      ],
-    },
-    {
-      "before": [
-        "<C-k>"
-      ],
-      "commands": [
-        "workbench.action.navigateUp"
-      ]
-    },
-    {
-      "before": [
-        "<C-l>"
-      ],
-      "commands": [
-        "workbench.action.navigateRight"
-      ]
-    },
-    // Navigate the Explorer
-    {
-      "before": [
-        "leader",
-        "E"
-      ],
-      "commands": [
-        "workbench.explorer.fileView.focus"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "e"
-      ],
-      "commands": [
-        "workbench.action.toggleSidebarVisibility"
-      ]
-    },
-    // Terminal
-    {
-      "before": [
-        "leader",
-        "t"
-      ],
-      "commands": [
-        "workbench.action.togglePanel"
-      ]
-    },
-    // Closing and saving buffers
-    {
-      "before": [
-        "leader",
-        "s"
-      ],
-      "commands": [
-        ":w!"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "q"
-      ],
-      "commands": [
-        ":q!"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "x"
-      ],
-      "commands": [
-        ":x!"
-      ]
-    },
-    // Jump to markers
-    {
-      "before": [
-        "[",
-        "d"
-      ],
-      "commands": [
-        "editor.action.marker.prev"
-      ]
-    },
-    {
-      "before": [
-        "]",
-        "d"
-      ],
-      "commands": [
-        "editor.action.marker.next"
-      ]
-    },
-    // Code actions
-    {
-      "before": [
-        "leader",
-        "c",
-        "a"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ]
-    },
-    // Search files
-    {
-      "before": [
-        "leader",
-        "s",
-        "f"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
-    },
-    // Command prompt
-    {
-      "before": [
-        "leader",
-        "p"
-      ],
-      "commands": [
-        "workbench.action.showCommands"
-      ]
-    },
-    // Show definition
-    {
-      "before": [
-        "g",
-        "d"
-      ],
-      "commands": [
-        "editor.action.showDefinitionPreviewHover"
-      ]
-    },
-    // Toggle activity bar
-    {
-      "before": [
-        "leader",
-        "u",
-        "a"
-      ],
-      "commands": [
-        "workbench.action.toggleActivityBarVisibility"
-      ]
-    },
-    // Move panes
-    {
-      "before": [
-        "leader",
-        "w",
-        "l"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupRight"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "w",
-        "h"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupLeft"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "w",
-        "j"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupDown"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "w",
-        "k"
-      ],
-      "commands": [
-        "workbench.action.moveActiveEditorGroupUp"
-      ]
-    },
-    // Resize panes
-    {
-      "before": [
-        "up"
-      ],
-      "commands": [
-        "workbench.action.increaseViewSize"
-      ]
-    },
-    {
-      "before": [
-        "down"
-      ],
-      "commands": [
-        "workbench.action.decreaseViewSize"
-      ]
-    }
-  ],
-  // To improve performance
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
-  },
   // ---------------------------------------------------
   "better-comments.tags": [
     {
@@ -509,7 +221,7 @@
       "backgroundColor": "transparent"
     },
     {
-      "tag": "HACK:",
+      "tag": "HACK",
       "color": "#C026D3",
       "strikethrough": false,
       "backgroundColor": "transparent"
@@ -533,4 +245,225 @@
       "backgroundColor": "#EAB308"
     }
   ],
+  "turbo.path": "/Users/pcy/.local/state/fnm_multishells/70105_1748332393812/bin/turbo",
+  "labuladong-leetcode.workspaceFolder": "",
+  "typeChallenges.workspaceFolder": "/Users/pcy/.typeChallenges",
+  //
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "vim.argumentObjectOpeningDelimiters": [
+    "(",
+    "[",
+    "{"
+  ],
+  "vim.argumentObjectClosingDelimiters": [
+    ")",
+    "]",
+    "}"
+  ],
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        ","
+      ],
+      "commands": [
+        "workbench"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "<C-l>"
+      ],
+      "after": [
+        "<C-w>",
+        "l"
+      ]
+    },
+    {
+      "before": [
+        "<C-h>"
+      ],
+      "after": [
+        "<C-w>",
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "<C-j>"
+      ],
+      "after": [
+        "<C-w>",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "<C-k>"
+      ],
+      "after": [
+        "<C-w>",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.showHover",
+          "args": {
+            "focus": true
+          }
+        }
+      ],
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "g",
+        "_"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "g",
+        "g"
+      ],
+      "commands": [
+        "workbench.view.scm"
+      ]
+    },
+    {
+      // 全局格式化代码
+      "before": [
+        "<Leader>",
+        "d",
+        "f"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    {
+      // 重命名
+      "before": [
+        "<Leader>",
+        "r",
+        "n"
+      ],
+      "commands": [
+        "abracadabra.renameSymbol",
+      ]
+    },
+  ],
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "g",
+        "_"
+      ]
+    },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "g",
+        "_"
+      ]
+    },
+    {
+      // 重构手法： 提取函数
+      "before": [
+        "<Leader>",
+        "r",
+        "f"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.refactor",
+          "args": {
+            "kind": "refactor.extract.function"
+          }
+        }
+      ]
+    },
+    {
+      // 重构手法： 提取变量
+      "before": [
+        "<Leader>",
+        "r",
+        "v"
+      ],
+      "commands": [
+        "abracadabra.extract"
+      ]
+    },
+  ]
 }

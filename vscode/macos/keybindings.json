@@ -1,31 +1,55 @@
 [
-  // === Explorer ===
   //
-  // Exit explorer with CTRL+h
-  // because I prefer to set the explorer position on the right
+  // ====== Code Hover =====
+  //
   {
-    "key": "ctrl+h",
-    "command": "workbench.action.navigateRight",
-    "when": "explorerViewletFocus"
+    "key": "ctrl+u",
+    "command": "editor.action.pageUpHover",
+    "when": "editorHoverFocused",
   },
   {
-    "key": "ctrl+h",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "sideBarFocus",
+    "key": "ctrl+d",
+    "command": "editor.action.pageDownHover",
+    "when": "editorHoverFocused",
   },
-  // New File
+  {
+    "key": "k",
+    "command": "editor.action.scrollUpHover",
+    "when": "editorHoverFocused",
+  },
+  {
+    "key": "j",
+    "command": "editor.action.scrollDownHover",
+    "when": "editorHoverFocused",
+  },
+  {
+    "key": "q",
+    "command": "editor.action.hideHover",
+    "when": "editorHoverFocused",
+  },
+  {
+    "key": "ctrl+u",
+    "command": "editor.action.pageUpHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.pageDownHover",
+    "when": "editorHoverFocused"
+  },
+  //
+  // ======= File Explorer =======
+  //
   {
     "key": "a",
     "command": "explorer.newFile",
     "when": "filesExplorerFocus && !inputFocus"
   },
-  // New Folder
   {
     "key": "shift+a",
     "command": "explorer.newFolder",
     "when": "filesExplorerFocus && !inputFocus"
   },
-  // RenameFile
   {
     "key": "r",
     "command": "renameFile",
@@ -36,7 +60,6 @@
     "command": "-renameFile",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
-  // DeleteFile
   {
     "key": "d",
     "command": "deleteFile",
@@ -47,56 +70,20 @@
     "command": "-deleteFile",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceMoveableToTrash && !inputFocus"
   },
-  // Cut File/Folder
   {
     "key": "x",
     "command": "filesExplorer.cut",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
-  // Copy File/Folder
   {
     "key": "y",
     "command": "filesExplorer.copy",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus"
   },
-  // Paste File/Folder
   {
     "key": "p",
     "command": "filesExplorer.paste",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
-  },
-  // Create new files and folders
-  {
-    "key": "a",
-    "command": "explorer.newFile",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "shift+a",
-    "command": "explorer.newFolder",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  // Copy, paste and cut files
-  {
-    "key": "y",
-    "command": "filesExplorer.copy",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
-  },
-  {
-    "key": "x",
-    "command": "filesExplorer.cut",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
-  },
-  {
-    "key": "p",
-    "command": "filesExplorer.paste",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
-  },
-  // Delete files
-  {
-    "key": "v",
-    "command": "explorer.openToSide",
-    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
   },
   {
     "key": "l",
@@ -179,11 +166,46 @@
     "when": "terminalFocus"
   },
   //
-  // === Other ===
+  // ====== Toggle comment selection ======
   //
-  // Toggle comment selection
   {
     "key": "ctrl+z",
     "command": "workbench.action.toggleZenMode"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "key": "cmd+s",
+    "command": "-workbench.action.files.save"
+  },
+  //
+  // ====== nvim move lines around with vim-move ======
+  //
+  {
+    "args": "<A-j>",
+    "key": "alt+j",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "args": "<A-k>",
+    "command": "editor.action.moveLinesUpAction",
+    "key": "alt+k",
+    "when": "editorTextFocus"
+  },
+  //
+  // ====== panel nav ======
+  //
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateRight",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "sideBarFocus",
   },
 ]

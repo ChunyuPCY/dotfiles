@@ -19,7 +19,7 @@ if platform.is_win then
     },
   }
 elseif platform.is_mac then
-  options.default_prog = { '/bin/zsh', '-l' }
+  options.default_prog = { 'zsh', '-l' }
   options.launch_menu = {
     { label = 'Zsh', args = { 'zsh', '-l' } },
     { label = 'Bash', args = { 'bash', '-l' } },
