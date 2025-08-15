@@ -101,7 +101,7 @@ function BackDrops:_create_focus_opts()
       width = '120%',
       vertical_offset = '-10%',
       horizontal_offset = '-10%',
-      opacity = 0.8,
+      opacity = 0.9,
     },
   }
 end

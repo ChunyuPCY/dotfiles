@@ -31,4 +31,23 @@ export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npmrc
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export PATH="$PATH:$CARGO_HOME/bin"
+# export RUST_ANALYZER_SERVER_PATH="$CARGO_HOME/bin/rust-analyzer"
+# ---------------------------------------------------------------
+
+#
+# --------------------------- Postgres --------------------------
+#
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/postgresql@17/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/postgresql@17/include"
+#
+# ---------------------------------------------------------------
+
+#
+# ------------------------- UV (python) -------------------------
+#
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
+export PATH="/Users/pcy/.local/share/../bin:$PATH"
+#
 # ---------------------------------------------------------------

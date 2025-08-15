@@ -53,6 +53,7 @@ return {
         --   "SnacksIndent6",
         --   "SnacksIndent7",
         --   "SnacksIndent8",
+
         -- },
       },
       ---@class snacks.indent.Scope.Config: snacks.scope.Config
@@ -108,7 +109,7 @@ return {
       },
     },
     image = {
-      enabled = true,
+      enabled = false,
     },
     terminal = {
       win = {
@@ -121,11 +122,11 @@ return {
       sources = {
         explorer = {
           hidden = true, -- Show hidden files in Explorer
-          layout = {
-            layout = {
-              position = "right", -- Show the explorer to the right
-            },
-          },
+          -- layout = {
+          --   layout = {
+          --     position = "right", -- Show the explorer to the right
+          --   },
+          -- },
         },
       },
       ui_select = true, -- replace `vim.ui.select` with the snacks picker

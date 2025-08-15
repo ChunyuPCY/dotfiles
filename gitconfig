@@ -1,3 +1,7 @@
+[init]
+	defaultBranch = main
+
 [user]
+  # not good to force this globally, you should use the right name/email in each context
 	name = ChunyuPCY
 	email = 18896534787@163.com

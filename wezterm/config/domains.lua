@@ -10,6 +10,11 @@ return {
       default_prog = { 'fish', '-l' },
       assume_shell = 'Posix',
     },
+    {
+      name = 'ali.server',
+      remote_address = '114.55.218.49',
+      username = 'root',
+    },
   },
 
   -- ref: https://wezfurlong.org/wezterm/multiplexing.html#unix-domains

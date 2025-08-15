@@ -3,16 +3,6 @@
 # Executes commands at the start of an interactive session.
 #
 
-if [[ -f "/opt/homebrew/bin/brew" ]] then
-  # If you're using macOS, you'll want this enabled
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
-
-# PATH
-if [[ "$(uname -sm)" = "Darwin arm64" ]] then
-  export PATH=/opt/homebrew/bin:$PATH;
-fi
-
 # 
 # ---------------- Zinit - zsh plugin management ----------------
 # 
@@ -114,6 +104,7 @@ starship config palette $STARSHIP_THEME
 export _ZO_DATA_DIR="$XDG_CACHE_HOME/zoxide"
 export _ZO_ECHO=1
 eval "$(zoxide init --cmd cd zsh)"
+rm "$ZDOTDIR/.zcompdump";compinit
 
 # Eza
 export EZA_CONFIG_DIR=$XDG_CONFIG_HOME/eza
@@ -124,5 +115,12 @@ export EZA_CONFIG_DIR=$XDG_CONFIG_HOME/eza
 #
 export DEEPSEEK_API_KEY=$(age -d -i $ZDOTDIR/keys/deepseek.key $ZDOTDIR/keys/deepseek-key.age)
 export DASHSCOPE_API_KEY=$(age -d -i $ZDOTDIR/keys/qianwen.key $ZDOTDIR/keys/qianwen-key.age)
+# ---------------------------------------------------------------
+
+# 
+# ---- zellij: autostart on zsh creation -----
+#
+# export ZELLIJ_CONFIG_DIR=$XDG_CONFIG_HOME/zellij
+# eval "$(zellij setup --generate-auto-start zsh)"
 # ---------------------------------------------------------------
 

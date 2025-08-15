@@ -19,7 +19,7 @@
       }
     ]
   },
-  "editor.wordWrap": "on",
+  "editor.wordWrap": "off",
   "editor.fontFamily": "Maple Mono NF",
   "editor.fontLigatures": true,
   "editor.bracketPairColorization.enabled": true,
@@ -85,12 +85,14 @@
   //
   // -------------------- Extensions -------------------
   "cSpell.userWords": [
+    "Cascader",
     "cjson",
     "dont",
     "esbenp",
     "Evondev",
     "radash",
     "vetur",
+    "Vite",
     "vsicons",
     "vueuse",
     "wxss"
@@ -107,6 +109,12 @@
   },
   "errorLens.excludeBySource": [
     "eslint(prettier/prettier)"
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "clsx\\(([^)]*)\\)",
+      "(?:'|\"|`)([^']*)(?:'|\"|`)"
+    ]
   ],
   // eslint配置项，保存时自动修复错误
   "eslint.enable": true,
@@ -155,7 +163,7 @@
   },
   // 指定 *.vue 文件的格式化工具为volar
   "[vue]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   //配置对 .ts 文件的格式化
   "[typescript]": {
@@ -256,7 +264,7 @@
   "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-a>": false,
-    "<C-f>": false
+    "<C-f>": true
   },
   "vim.insertModeKeyBindings": [
     {
@@ -272,6 +280,41 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
+        "L",
+      ],
+      "commands": [
+        ":bnext"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "commands": [
+        ":bprev"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "q"
+      ],
+      "commands": [
+        ":q"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        ","
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
         "<leader>",
         "l",
         "e"
@@ -283,6 +326,7 @@
     {
       "before": [
         "<leader>",
+        "t",
         "e"
       ],
       "commands": [
@@ -292,20 +336,11 @@
     {
       "before": [
         "<leader>",
+        "t",
         "a"
       ],
       "commands": [
         "workbench.action.toggleActivityBarVisibility"
-      ]
-    },
-
-    {
-      "before": [
-        "<leader>",
-        ","
-      ],
-      "commands": [
-        "workbench"
       ]
     },
     {
@@ -367,23 +402,6 @@
     },
     {
       "before": [
-        "H"
-      ],
-      "after": [
-        "^"
-      ]
-    },
-    {
-      "before": [
-        "L"
-      ],
-      "after": [
-        "g",
-        "_"
-      ]
-    },
-    {
-      "before": [
         "<Leader>",
         "g",
         "g"
@@ -415,43 +433,8 @@
       ]
     },
   ],
-  "vim.operatorPendingModeKeyBindings": [
-    {
-      "before": [
-        "H"
-      ],
-      "after": [
-        "^"
-      ]
-    },
-    {
-      "before": [
-        "L"
-      ],
-      "after": [
-        "g",
-        "_"
-      ]
-    },
-  ],
+  "vim.operatorPendingModeKeyBindings": [],
   "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "H"
-      ],
-      "after": [
-        "^"
-      ]
-    },
-    {
-      "before": [
-        "L"
-      ],
-      "after": [
-        "g",
-        "_"
-      ]
-    },
     {
       // 重构手法： 提取函数
       "before": [

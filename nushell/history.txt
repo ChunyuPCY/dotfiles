@@ -1,0 +1,219 @@
+exit
+echo "sk-67cc8b92a2754cc1b02e1d69d15aab20" | age -r $(cat age.key) > apikey.age
+which age
+cat age.key
+which cat
+bat
+which bat
+exit
+fastfetch 
+ls
+e
+exit
+ll
+la
+ls
+cd record
+cd ../Documents/code/
+cd ../record/
+cd Editor/
+ll
+la
+ls
+cat neovim.md
+bat neovim.md
+glow neovim.md
+exit
+config nu 
+e
+exit
+cd config
+cd ~/.config/
+ls
+cd nushell/
+ll
+ls
+cat config.nu
+q
+e
+exit
+echo $nu.config-path
+nvim .
+cd ..
+ls
+cd $nu.home-path
+cd .config/nushell/
+exit
+$env.config
+exit
+nvim .
+$nu.config-path
+clear
+$nu.config-path
+$env.config
+e
+exit
+nvim .
+e
+exit
+$nu.default-config-dir
+ls
+which zsh
+e
+exit
+nu
+exit
+$env.PATH
+cd wez
+exit
+clear
+$env.PATH
+exit
+$env.PATH
+exit
+$env.PATH
+e
+exit
+$env.PATH
+$env.LOGNAME
+$nu.loginshell-path
+cat $nu.loginshell-path
+cd .config/nushell/
+nvim .
+$nu.default-config-dir
+$env.XDG_DATA_HOME
+e
+exit
+$nu.default-config-dir
+$env | reject config | transpose key val | each {|r| echo $"$env.($r.key) = '($r.val)'"} | str join (char nl)
+e
+exit
+exit
+cd ..
+ls
+q
+e
+exit
+$env.PATH
+exit
+chsh -s /bin/zsh
+exit
+nvim .
+cd /opt/homebrew/bin/
+ll
+ls
+which fnm
+cd
+$env.PATH
+e
+exit
+nu
+$env.PATH
+"/opt/homebrew/bin/brew" | path exists
+cd `~/Library/Application Support/`
+cd nushell
+cat env.nu
+^/opt/homebrew/bin/brew shellenv
+e
+exit
+$env.config
+exit
+^/opt/homebrew/bin/brew shellenv | complete
+e
+exit
+$env.PA
+$env.PATH
+^/opt/homebrew/bin/brew shellenv | complete | $in.stdout | str trim | split row "\n"
+^/opt/homebrew/bin/brew shellenv | complete | $in.stdout | str trim
+exit
+e
+alias exit = e
+e
+exit
+$env.HOME
+$env.XDG_CACHE_HOME
+$env.XDG_CONFIG_HOME
+$env
+env
+$env | "XDG_CONFIG_HOME" exists
+$env | get -i "XDG_*"
+$env | get -i "XDG_*($env | get -i "XDG_CONFIG_HOME") != $nothing"
+($env | get -i "XDG_CONFIG_HOME") != $nothing
+"XDG_CONFIG_HOME" in $env
+"XDG_*" in $env
+"XDG_CONFIG_HOME" in $env
+"XDG_*" in $env
+$env.XDG_CONFIG_HOME
+e
+ls
+pwd
+which python3
+cd Documents/
+ls
+cd personal/
+ls
+cd ../record/
+ls
+cd Mac/
+cat setup.md
+cd 
+cd .config/nushell
+nvim .
+vim config.nu
+$env.PATH
+which fnm
+$env.PATH
+ls
+cd ghos
+cd .config/ghostty
+nvim .
+ls
+cd 
+ls
+cd .config/ghostty
+ls
+q
+$nu.env-path
+$nu.config-path
+$nu.home-path
+let zoxide_config_path = $env.XDG_CONFIG_HOME | path join "nushell/script/zoxide.nu"
+$zoxide_config_path
+path exists zoxide_config_path
+path exists $zoxide_config_path
+$zoxide_config_path | path exists 
+let my_path = ~/.config/nushell/config.nu
+let my_path = "~/.config/nushell/config.nu"
+$my_path
+$my_path | path exists 
+source $my_path
+zoxide init nue
+ls -a
+zoxide init nushell | save -f ~/.zoxide.nu
+ls -a
+z nushell
+cd gh
+z nushell
+cd .config/ghostty
+z
+cd 
+source .zoxide.nu
+cat .zoxide.nu
+z nushell
+source .zoxide.nu
+which z
+which cd
+which zi
+nvim .zoxide.nu
+which z
+nvim .zoxide.nu
+cd ghos
+cd .config/ghostty
+nvim .
+cd .config/ghostty
+nvim .
+cd .config/ghostty
+nvim .
+cd Desk
+cd Desktop/
+cd 
+cd .config/ghostty

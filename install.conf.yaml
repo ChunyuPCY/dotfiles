@@ -37,8 +37,11 @@
     ~/.config/yazi:
       path: yazi
 
-    ~/.config/nvim:
+    ~/.config/lazyvim:
       path: lazyvim
+
+    ~/.config/nvim:
+      path: astro-nvim
 
     ~/.config/lazygit:
       path: lazygit
@@ -46,11 +49,20 @@
     ~/.config/wezterm:
       path: wezterm
 
-    ~/.config/ghostty:
-      path: ghostty
-
     ~/.config/presenterm:
       path: presenterm
+
+    ~/.qutebrowser:
+      if: "[ `uname` = Darwin ]"
+      path: qutebrowser
+
+    ~/Library/Application Support/nushell:
+      if: "[ `uname` = Darwin ]"
+      path: nushell
+      force: true
+
+    ~/.config/nushell:
+      path: nushell
 
     # VS Code Linux
     ~/.config/Code/User:

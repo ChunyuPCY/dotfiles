@@ -5,7 +5,8 @@ return {
   exit_behavior_messaging = 'Verbose',
   status_update_interval = 1000,
 
-  scrollback_lines = 20000,
+  -- How many lines of scrollback you want to retain per tab
+  scrollback_lines = 6666,
 
   hyperlink_rules = {
     -- Matches: a URL in parens: (URL)

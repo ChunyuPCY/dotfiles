@@ -38,4 +38,5 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-# alias vi='NVIM_APPNAME="nvim-from-scratch" nvim'
+alias vi='NVIM_APPNAME="nvim-scratch" nvim'
+alias lvim='NVIM_APPNAME="lazyvim" nvim'

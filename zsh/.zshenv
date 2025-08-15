@@ -17,9 +17,10 @@ export XDG_DATA_HOME="$HOME/.local/share"  # essential portable data, Applicatio
 export XDG_STATE_HOME="$HOME/.local/state" # persistent non-portable data
 
 # Themes (Catppuccin Mocha)
-export BAT_THEME="Catppuccin Mocha"
-export TMUX_THEME="Catppuccin Mocha"
-export STARSHIP_THEME="catppuccin_mocha"
+export THEME="mocha"
+export BAT_THEME="Catppuccin ${(C)THEME}"
+export TMUX_THEME="Catppuccin ${(C)THEME}"
+export STARSHIP_THEME="catppuccin_$THEME"
 
 # Zsh root
 ZDOTDIR=$XDG_CONFIG_HOME/zsh
@@ -27,3 +28,4 @@ ZDOTDIR=$XDG_CONFIG_HOME/zsh
 # Software specific
 export EDITOR="nvim"
 export VISUAL="nvim"
+

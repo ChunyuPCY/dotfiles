@@ -13,6 +13,9 @@ return {
     },
     signature = { enabled = true },
     completion = {
+      trigger = {
+        show_in_snippet = false,
+      },
       menu = {
         draw = {
           columns = {
@@ -44,6 +47,14 @@ return {
           name = "Nerd Fonts",
           score_offset = 15, -- Tune by preference
           opts = { insert = true }, -- Insert nerdfont icon (default) or complete its name
+          should_show_items = function()
+            return vim.tbl_contains(
+              -- Enable emoji completion only for git commits and markdown.
+              -- By default, enabled for all file-types.
+              { "lua" },
+              vim.o.filetype
+            )
+          end,
         },
         avante = {
           module = "blink-cmp-avante",
