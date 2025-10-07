@@ -7,6 +7,10 @@ return {
     opts = {
       flavour = "mocha",
       transparent_background = true,
+      float = {
+        transparent = true,
+        solid = true,
+      },
       term_colors = true,
       custom_highlights = function()
         return {
@@ -26,14 +30,5 @@ return {
     opts = {
       colorscheme = "catppuccin",
     },
-  },
-  {
-    "akinsho/bufferline.nvim",
-    optional = true,
-    opts = function(_, opts)
-      if (vim.g.colors_name or ""):find("catppuccin") then
-        opts.highlights = require("catppuccin.groups.integrations.bufferline").get()
-      end
-    end,
   },
 }

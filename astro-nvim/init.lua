@@ -13,9 +13,7 @@ if not (vim.env.LAZY or (vim.uv or vim.loop).fs_stat(lazypath)) then
   end
 end
 
-vim.opt.rtp:prepend(lazypath)
-
--- validate that lazy is available
+vim.opt.rtp:prepend(lazypath) -- validate that lazy is available
 if not pcall(require, "lazy") then
   -- stylua: ignore
   vim.api.nvim_echo({ { ("Unable to load lazy from: %s\n"):format(lazypath), "ErrorMsg" }, { "Press any key to exit...", "MoreMsg" } }, true, {})

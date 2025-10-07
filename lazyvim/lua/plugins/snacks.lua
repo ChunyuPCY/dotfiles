@@ -118,6 +118,7 @@ return {
         },
       },
     },
+    explorer = {},
     picker = {
       sources = {
         explorer = {

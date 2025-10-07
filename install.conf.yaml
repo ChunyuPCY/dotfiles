@@ -49,6 +49,9 @@
     ~/.config/wezterm:
       path: wezterm
 
+    ~/.config/ghostty:
+      path: ghostty
+
     ~/.config/presenterm:
       path: presenterm
 

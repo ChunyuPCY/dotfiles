@@ -39,8 +39,8 @@ return {
     -- "hrsh7th/nvim-cmp", -- autocompletion for avante commands and mentions
     "saghen/blink.cmp",
     "ibhagwan/fzf-lua", -- for file_selector provider fzf
-    -- "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
-    "echasnovski/mini.icons",
+    -- "nvim-tree/nvim-web-devicons", -- or nvim-mini/mini.icons
+    "nvim-mini/mini.icons",
     -- "zbirenbaum/copilot.lua", -- for providers='copilot'
     {
       -- support for image pasting

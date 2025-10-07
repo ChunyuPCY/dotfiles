@@ -19,7 +19,7 @@
       }
     ]
   },
-  "editor.wordWrap": "off",
+  "editor.wordWrap": "on",
   "editor.fontFamily": "Maple Mono NF",
   "editor.fontLigatures": true,
   "editor.bracketPairColorization.enabled": true,
@@ -30,6 +30,11 @@
   "editor.fontWeight": "500",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
   "editor.formatOnType": true,
   "editor.minimap.enabled": false,
   "files.exclude": {
@@ -57,9 +62,7 @@
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.externalBrowser": "arc",
   "workbench.sideBar.location": "right",
-  // "workbench.editor.showTabs": "single",
   "workbench.startupEditor": "none",
-  // "workbench.statusBar.visible": false,
   "workbench.tips.enabled": false,
   "workbench.editorAssociations": {
     "*.svg": "default"
@@ -91,10 +94,13 @@
     "esbenp",
     "Evondev",
     "radash",
+    "tauri",
+    "unplugin",
     "vetur",
     "Vite",
     "vsicons",
     "vueuse",
+    "weixin",
     "wxss"
   ],
   // 当按tab键的时候，会自动提示

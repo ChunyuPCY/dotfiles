@@ -1,5 +1,5 @@
 function clash() {
-  export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890;
+  export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897;
 }
 clash
 
@@ -27,6 +27,7 @@ alias la="eza --icons --long --header --all"
 alias lg="eza --icons --long --header --all --git"
 # 替换 tree 命令
 alias lt="eza --tree -L 2 --icons"
+alias tree="eza --tree --icons"
 # -----------------------------------------------------------
 
 function y() {
@@ -40,3 +41,4 @@ function y() {
 
 alias vi='NVIM_APPNAME="nvim-scratch" nvim'
 alias lvim='NVIM_APPNAME="lazyvim" nvim'
+alias kvim='NVIM_APPNAME="nvim-kickstart" nvim'

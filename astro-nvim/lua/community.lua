@@ -14,4 +14,10 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.completion.avante-nvim" },
+  { import = "astrocommunity.neovim-lua-development.helpview-nvim" },
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.mdx" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+  { import = "astrocommunity.pack.python" },
 }

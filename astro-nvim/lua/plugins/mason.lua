@@ -2,6 +2,14 @@
 
 ---@type LazySpec
 return {
+  {
+    "williamboman/mason.nvim",
+    opts = function(_, opts)
+      if not opts.ui then opts.ui = {} end
+
+      opts.ui.border = "rounded"
+    end,
+  },
   -- use mason-tool-installer for automatically installing Mason packages
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
