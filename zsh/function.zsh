@@ -1,5 +1,5 @@
 function clash() {
-  export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897;
+  export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890;
 }
 clash
 
@@ -13,6 +13,8 @@ alias c="clear"
 alias e="exit"
 
 alias cat="bat"
+
+alias wttr="curl 'wttr.in/Suzhou?m3'"
 
 # 
 # --------------------- Eza (better ls) ---------------------
@@ -42,3 +44,9 @@ function y() {
 alias vi='NVIM_APPNAME="nvim-scratch" nvim'
 alias lvim='NVIM_APPNAME="lazyvim" nvim'
 alias kvim='NVIM_APPNAME="nvim-kickstart" nvim'
+
+#
+# --------------------------- work --------------------------
+#
+alias ciciconfig='git config user.name panchunyu;git config user.email panchunyu@chinacici.com'
+# -----------------------------------------------------------

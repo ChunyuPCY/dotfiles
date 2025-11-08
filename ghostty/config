@@ -14,6 +14,7 @@ copy-on-select = true
 mouse-hide-while-typing = true
 # 确认关闭窗口时不显示确认提示
 confirm-close-surface = false
+cursor-style = "block"
 # 光标轨迹特效相关文件
 custom-shader = "~/.config/ghostty/shaders/cursor_smear.glsl"
 
@@ -39,7 +40,13 @@ palette = 14=#8be9fd
 palette = 15=#ffffff
 foreground = f8f8f2
 background = 282a36
-background-opacity = 0.75
+background-opacity = 1.5
+
+# background-image = "~/.config/ghostty/images/0.png"
+background-image = "~/.config/ghostty/images/1.jpg"
+background-image-opacity = 0.2
+background-image-fit = "cover"
+
 window-decoration = false
 
 # ===

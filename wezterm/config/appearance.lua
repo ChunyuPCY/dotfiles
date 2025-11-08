@@ -37,9 +37,9 @@ return {
 
   -- window
   window_padding = {
-    left = 8,
-    right = 8,
-    top = 10,
+    left = 4,
+    right = 4,
+    top = 4,
     bottom = 0,
   },
   adjust_window_size_when_changing_font_size = false,

@@ -37,5 +37,5 @@ g.lazyvim_prettier_needs_config = false
 -- Set to false to disable auto format
 g.lazyvim_eslint_auto_format = false
 
--- vim.api.nvim_set_hl(0, "@function", { italic = true })
+vim.api.nvim_set_hl(0, "@function", { italic = true })
 -- vim.api.nvim_set_hl(0, "@variable", { italic = true })
